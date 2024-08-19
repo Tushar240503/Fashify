@@ -1,0 +1,15 @@
+# Ignore binary files
+*.jpeg
+*.jpg
+*.png
+*.gif
+
+# Ignore node_modules
+node_modules/
+
+# Ignore OS-generated files
+Thumbs.db
+
+# Ignore temporary files
+tempCodeRunnerFile.*
+

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Specialized Clothing Form</title>
+  <link rel="stylesheet" type="text/css" href="w.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <h1>SHOES</h1>
+
+  <form action="/shoes" method="POST">
+    <label for="name">Link:</label>
+    <input type="text" id="name" name="name"><br><br>
+
+    <label for="size">Size:</label>
+    <input type="text" id="size" name="size"><br><br>
+
+    <label>Padding:</label>
+    <div class="cont">
+    <input type="radio" id="padding-yes" name="padding" value="yes">
+    
+    <label for="padding-yes">Yes</label>
+    <input type="radio" id="padding-no" name="padding" value="no">
+    <label for="padding-no">No</label><br><br>
+</div><br>
+    <label for="padding-comment">Padding Comment:</label><br>
+    <textarea id="padding-comment" name="padding-comment" rows="4" cols="50"></textarea><br><br>
+
+    <div class="dropdown">
+        <select class="dropdown-btn">Buttons
+            <div class="dropdown-content">
+                <option value="Button">Orthopedic </option>
+              <option value="Magnetic">Slip-On</option>
+              <option href="Normal">Velcro Strap</option>
+              <option href="Velcro">Customized</option>
+              <option href="Velcro">AFO-Friendly</option>
+              <!-- <option href="Not available">Not Available</option> -->
+            </div>
+        </select>
+      </div>
+      <br><br>
+
+    <label>Tagless:</label>
+    <input type="radio" id="tagless-yes" name="tagless" value="yes">
+    <label for="tagless-yes">Yes</label>
+    <input type="radio" id="tagless-no" name="tagless" value="no">
+    <label for="tagless-no">No</label><br>
+
+    <label for="tagless-comment">Tagless Comment:</label><br>
+    <textarea id="tagless-comment" name="tagless-comment" rows="4" cols="50"></textarea><br><br>
+
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html>
